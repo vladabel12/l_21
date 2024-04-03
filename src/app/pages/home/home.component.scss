@@ -1,0 +1,202 @@
+body{
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+.header{
+    font-weight: 600;
+    font-size: 28rem;
+    line-height: 129%;
+    color: var(--header-color);
+    max-width: 195rem;
+    margin-bottom: 28rem;
+}
+.header-form {
+    border-radius: 15rem;
+    background: var(--form-background);
+    gap: 19rem;
+	display: flex;
+    padding: 13rem 18rem 12rem 18rem;
+    align-items: center;
+    margin-bottom: 28rem;
+
+	&__input {
+        width: 100%;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-weight: 500;
+        font-size: 10rem;
+        line-height: 200%;
+        color: var(--header-color);
+		&::placeholder {
+            color: var(--placeholder-color);
+		}
+
+	}
+
+}
+.icon-search{
+    font-size: 20rem;
+}
+.header-link{
+    transition: .2s all ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+    
+}
+.selection, .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 19rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20rem;
+    margin-bottom: 16rem;
+}
+.products__a{
+    font-weight: 600;
+    font-size: 14rem;
+    line-height: 143%;
+    color: var(--placeholder-color);
+    transition: .2s all ease-in-out;
+&:hover {
+    color: var(--second-color);
+}
+}
+.products__a{
+    position: relative;
+    &:hover::before, &.is-active::before {
+        transform: translateX(-50%) scale(1);
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: -12px;
+        transform: translateX(-50%) scale(0);
+        transition: 0.2s all ease-in-out;
+        background-color: var(--second-color);
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 6rem; 
+        position: absolute;
+        top: -6rem; 
+    }
+}
+.is-active{
+    color: var(--second-color);
+}
+
+.coffee{
+    margin-bottom: 23rem;
+    &__container{
+        background: linear-gradient(137deg, #252a32 0%, #262b33 100%);
+        width: 149rem;
+        border-radius: 23rem;
+        padding: 12rem 11rem 23rem 12rem;
+    }
+    &__objects{
+        display: flex;
+        justify-content: space-between;
+        gap: 22rem;
+    }
+    &__image{
+        position: relative;
+        max-width: 136rem;
+    }
+    &__background-image{
+        position: relative;
+        border-radius: 16rem;
+        margin-bottom: 10rem;
+    }
+    &__mark{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 4.8rem;
+        align-items: center;
+        border-radius: 0 16rem 0 26rem;
+        max-width: 53rem;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 2rem 10rem;
+    }
+    &__mark-icon{
+        font-size: 10rem;
+    }
+    &__mark-text{
+        font-weight: 600;
+        font-size: 10rem;
+        line-height: 200%;
+        color: var(--header-color);
+    }
+    &__name{
+        font-weight: 400;
+        font-size: 13rem;
+        line-height: 154%;
+        color: var(--header-color);
+        margin-bottom: 1rem;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 9rem;
+        line-height: 222%;
+        color: var(--header-color);
+        margin-bottom: 3rem;
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 6rem;
+        align-items: center;
+    }
+    &__price{
+        font-weight: 600;
+        font-size: 15rem;
+        line-height: 133%;
+        color: var(--header-color);
+    }
+    &__button{
+        background-color: var(--second-color);
+        border: none;
+        cursor: pointer;
+        width: 28rem;
+        height: 28rem;
+        border-radius: 7rem;
+        &-icon{
+            font-size: 10rem;
+            margin-inline: auto;
+            
+        }
+    }
+}
+.dollar{
+    color: var(--second-color);
+    margin-right: 4rem;
+}
+.item, .coffee__objects{
+    width: 491rem;
+    gap: 22rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30rem;
+}
+.beans{
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 125%;
+    color: var(--header-color);
+    margin-bottom: 19rem;
+}

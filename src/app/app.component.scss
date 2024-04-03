@@ -1,0 +1,16 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 390rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  margin-inline: auto;
+  border: 1rem solid #302e2e;
+  overflow-x: hidden;
+}
+
+.main {
+  overflow-y: auto;
+  
+}

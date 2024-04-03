@@ -1,0 +1,151 @@
+<div class="header">Find the best coffee for you</div>
+<form class="header-form">
+  <a [routerLinkActive]="['is-active']"  class="header-link" routerLink="/search">
+    <span class="header-link__icon icon-search"></span>
+  </a>
+  <input class="header-form__input" type="text" placeholder="Find Your Coffee..." />
+</form>
+<div class="selection">
+  <a href="/" class="products__a is-active">All</a>
+  <a href="/" class="products__a">Cappuccino</a>
+  <a href="/" class="products__a">Espresso</a>
+  <a href="/" class="products__a">Americano</a>
+  <a href="/" class="products__a">Macchiato</a>
+  
+</div>
+
+<div class="coffee">
+  <div class="coffee__objects">
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/cappucino1.png" alt="1" class="coffee__background-image">
+        <div class="coffee__mark">
+          <a [routerLinkActive]="['is-active']"  class="coffee__mark-icon" routerLink="/star">
+            <span class="header-link__icon icon-star"></span>
+          </a>
+          <p class="coffee__mark-text">4.5</p>
+        </div>
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Cappuccino</a>
+      </div>
+      <a href="/" class="coffee__desc">With Steamed Milk</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/cappucino2.png" alt="2" class="coffee__background-image">
+        <div class="coffee__mark">
+          <a [routerLinkActive]="['is-active']"  class="coffee__mark-icon" routerLink="/star">
+            <span class="header-link__icon icon-star"></span>
+          </a>
+          <p class="coffee__mark-text">4.2</p>
+        </div>
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Cappuccino</a>
+      </div>
+      <a href="/" class="coffee__desc">With Foam</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/cappucino1.png" alt="3" class="coffee__background-image">
+        <div class="coffee__mark">
+          <a [routerLinkActive]="['is-active']"  class="coffee__mark-icon" routerLink="/star">
+            <span class="header-link__icon icon-star"></span>
+          </a>
+          <p class="coffee__mark-text">4.5</p>
+        </div>
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Cappuccino</a>
+      </div>
+      <a href="/" class="coffee__desc">With Steamed Milk</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="beans">Coffee beans</div>
+
+<div class="list">
+  <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/beans1.png" alt="1" class="coffee__background-image">
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Robusta Beans</a>
+      </div>
+      <a href="/" class="coffee__desc">Medium Roasted</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/beans2.png" alt="2" class="coffee__background-image">
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Cappuccino</a>
+      </div>
+      <a href="/" class="coffee__desc">With Steamed Milk</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div href="/" class="coffee__container">
+      <div class="coffee__image">
+        <img src="assets/img/beans1.png" alt="3" class="coffee__background-image">
+      </div>
+      <div class="coffee__info">
+        <a href="/" class="coffee__name">Robusta Beans</a>
+      </div>
+      <a href="/" class="coffee__desc">Medium Roasted</a>
+      <div class="coffee__footer">
+        <div class="coffee__price"><span class="dollar">$</span>4.20</div>
+        <button class="coffee__button">
+          <a [routerLinkActive]="['is-active']"  class="coffee__button-icon" routerLink="/plus">
+            <span class="coffee-link__icon icon-plus"></span>
+          </a>
+        </button>
+      </div>
+    </div>
+  </a>
+</div>
+
